@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Errors, UserService } from '../shared';
 
 @Component({
   selector: 'auth-page',
@@ -9,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 export class AuthComponent implements OnInit {
   authType: String = '';
   title: String = '';
+  errors: Errors = new Errors();
   isSubmitting: boolean = false;
   authForm: FormGroup;
 

@@ -30,4 +30,3 @@ const rootRouting: ModuleWithProviders = RouterModule.forRoot([], { useHash: tru
   bootstrap: [AppComponent]
 })
 export class AppModule {}
-
